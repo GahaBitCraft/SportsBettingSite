@@ -22,7 +22,7 @@
 
 ## 🎥 Demo Video
 
-[![Watch Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Watch Demo](SBS_Designs_Videos/Mobile_View/User_Design.mp4)]
 
 *Upload your walkthrough or demo video to YouTube or Vimeo and replace `VIDEO_ID` with your video’s ID.*
 
