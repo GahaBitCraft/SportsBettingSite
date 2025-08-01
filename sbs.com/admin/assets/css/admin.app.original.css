@@ -1,0 +1,848 @@
+/*  Copyright 2021 - SBS
+    This is the original file of all the styles required for main Admin App files.
+    This file does not contain responsive design.
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #20203c;
+	min-height: 42em;
+}
+
+@font-face {
+	font-family: Segoe Script;
+	src: url('../fonts/Segoe Script.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-R;
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: Poppins-R;
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #2A2A4A; 
+  background: #2A2A4A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A4A; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0e0e0; 
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .navbar {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  background: #20203c;
+}
+
+.wrapper .container .navbar .logo {
+  width: 30%;
+  height: auto;
+}
+
+.wrapper .container .navbar .logo-text {
+  margin: 1em 3em;
+  font-size: 20px;
+  font-family: Segoe Script;
+}
+
+.wrapper .container .navbar .logo-text a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.wrapper .container .navbar .navs {
+	width: 50%;
+	height: auto;
+}
+
+.wrapper .container .navbar .navs a {
+	text-decoration: none;
+}
+
+.wrapper .container .navbar .navs a button {
+	margin: 1.4em 3em;
+	width: 180px;
+	height: 40px;
+	background: #20203c;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.wrapper .container .navbar .navs a button:hover {
+	color: #ACDD49;
+}
+
+.wrapper .container .navbar .navs a button.active {
+	background: #2A2A4A;
+	color: #ACDD49;
+}
+
+.wrapper .container .navbar .drop {
+	width: auto;
+	height: auto;
+}
+
+.wrapper .container .navbar .drop .dropbtn {
+	width: 200px;
+	height: 40px;
+	margin: 0.5em 2.5em;
+	display: flex;
+	flex-wrap: wrap;
+  background-color: #2A2A4A;
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wrapper .container .navbar .drop .dropbtn .img {
+	width: 20%;
+	height: auto;
+	margin-right: 10px;
+}
+
+.wrapper .container .navbar .drop .dropbtn .img img {
+	width: 100%;
+	height: 40px;
+	resize: both;
+	margin-left: 0;
+	float: left;
+}
+
+.wrapper .container .navbar .drop .dropbtn .name {
+	width: 55%;
+	margin-top: 2px;
+}
+
+.wrapper .container .navbar .drop .dropbtn .name .nm {
+	font-family: Montserrat-R;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.wrapper .container .navbar .drop .dropbtn .name .tag {
+	font-family: Montserrat-R;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.wrapper .container .navbar .drop .dropbtn .drop {
+	width: 20%;
+	margin-top: 7px;
+}
+
+.wrapper .container .navbar .drop .dropbtn:hover, .dropbtn:focus {
+  background: #2A2A4A;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #2a2a4a;
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: 60px;
+  right: 40px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {text-decoration: none;color: #ACDD49;}
+
+.show {display: block;}
+
+/* Main Section */
+
+.wrapper .container .main {
+	height: auto;
+	margin-top: 1.4em;
+  margin-left: 200px;
+  padding-top: 40px;
+}
+
+.wrapper .container .main .content {
+	width: 100%;
+	height: auto;
+	background: #2a2a4a;
+	padding-bottom: 30px;
+	border-top-left-radius: 20px;
+	padding-top: 3em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrapper .container .main .content .cont {
+	width: 95%;
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.wrapper .container .main .content .cont .heading .title {
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.wrapper .container .main .content .cont .heading .btn button {
+	width: 180px;
+	height: 36px;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 14px;
+	color: #000000;
+	background: #ACDD49;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.wrapper .container .main .content .cont .data-container {
+	width: 100%;
+	height: auto;
+	margin-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrapper .container .main .content .cont .data-container .data {
+	width: 98%;
+	height: auto;
+	padding: 20px;
+	background: #201F3F;
+}
+
+.wrapper .container .main .content .cont .data-container .data table {
+	width: 100%;
+	height: auto;
+	text-align: left;
+	border-collapse: collapse;
+	background: #201F3F;
+}
+
+.wrapper .container .main .content .cont .data-container .data table thead tr th {
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 13px;
+	color: #ffffff;
+	padding-left: 10px;
+	padding-bottom: 6px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table thead tr th:first-child {
+	padding-left: 20px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr {
+	background: #2a2a4a;
+	color: #e0e0e0;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 12px;
+	border-bottom: 10px solid #201F3F;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td:first-child {
+	color: #ACDD49;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.status {
+	color: #13C71A;
+	width: 60%;
+	padding: 4px;
+	border: none;
+	border-radius: 4px;
+	background: #13C71A33;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.status.success {
+	color: #13C71A;
+	width: 60%;
+	padding: 4px;
+	border: none;
+	border-radius: 4px;
+	background: #13C71A33;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.status.awaiting {
+	color: #FCC330;
+	width: 60%;
+	padding: 4px;
+	border: none;
+	border-radius: 4px;
+	background: #FCC33033;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.enabled {
+	color: #ffffff;
+	width: 90%;
+	padding: 4px;
+	border: none;
+	border-radius: 4px;
+	background: #ACDD49;
+	cursor: pointer;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td a {
+	text-decoration: none;
+}
+
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.action {
+	width: 30%;
+	height: 26px;
+	border: none;
+	border-radius: 4px;
+	background: #201F3F;
+	cursor: pointer;
+	margin-left: 8px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.action:hover {
+	background: #ffffff;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.action svg {
+	width: 15px;
+	height: 15px;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.enabled:hover {
+	background: #ffffff;
+	color: #000000;
+}
+
+.wrapper .container .main .content .cont .data-container .data table tbody tr td button.disabled {
+	color: #ffffff;
+	width: 90%;
+	padding: 4px;
+	border: none;
+	border-radius: 4px;
+	background: #ACDD494D;
+	cursor: pointer;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 14%;
+  position: fixed;
+  z-index: 1;
+  top: 5em;
+  left: 0;
+  background: #20203c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-family: Montserrat-R;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  margin-left: 20px;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-top: 0.3em;
+}
+
+.sidenav a.active {
+  background: #ACDD49;
+}
+
+.sidenav a:hover {
+	background: #2a2a4a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.wrapper .container .main .content .cont .edit-container {
+	width: 100%;
+	height: auto;
+	margin-top: 0em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrapper .container .main .content .cont .edit-container .amounts {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1em;
+}
+
+.wrapper .container .main .content .cont .edit-container .amount {
+	width: 10%;
+	height: auto;
+	margin-left: 30.5px;
+}
+
+.wrapper .container .main .content .cont .edit-container .amount:first-child {
+	margin-left: 0px;
+}
+
+.wrapper .container .main .content .cont .edit-container .amount button {
+	width: 100%;
+	height: 40px;
+	border: none;
+	background: #201F3F;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 14px;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.wrapper .container .main .content .cont .edit-container .amount button.wagerAmntActive {
+	background: #ACDD49;
+	color: #201F3F;
+}
+
+.wrapper .container .main .content .cont .edit-container .amount button.wagerAmoActive {
+	background: #ACDD49;
+	color: #201F3F;
+}
+
+.wrapper .container .main .content .cont .edit-container .amount button.wagerAmtActive {
+	background: #ACDD49;
+	color: #201F3F;
+}
+
+.wrapper .container .main .content .cont .edit-container .amount button:hover {
+	background: #ffffff;
+	color: #000000;
+}
+
+.wrapper .container .main .content .cont .edit-container .title {
+	width: 100%;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 13px;
+	color: #e0e0e0;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box {
+	width: 100%;
+	height: 100px;
+	margin-top: 0.5em;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	background: #201F3F;
+}
+
+.wrapper .container .main .content .cont .bck-btn {
+	margin-bottom: 1em;
+}
+
+.wrapper .container .main .content .cont .bck-btn button {
+	width: 25px;
+	height: 25px;
+	padding-left: 2px;
+	padding-right: 4px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+	border-radius: 50%;
+	background: #ACDD49;
+	border: none;
+	cursor: pointer;
+}
+
+.wrapper .container .main .content .cont .bck-btn button svg {
+	width: 12px;
+	height: 12px;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-dets, .bet-selecs {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-dets .bet-det, .bet-selecs .bet-selec {
+	width: 46%;
+	height: auto;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-dets .bet-det label, .bet-selecs .bet-selec label {
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 12px;
+	color: #e0e0e0;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-dets .bet-det input {
+	width: 100%;
+	height: 30px;
+	background: #201F3F;
+	border: none;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 12.5px;
+	color: #ffffff;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-que {
+	width: 100%;
+	max-height: 30px;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-que .bet-que-input input {
+	width: 98%;
+	height: 30px;
+	border: none;
+	border-radius: 4px;
+	background: #201F3F;
+	padding-left: 20px;
+	border: none;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 13px;
+	color: #ffffff;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-que .bet-que-input input:focus {
+	outline: none;
+	background: #ffffff;
+	color: #000000;
+}
+
+.wrapper .container .main .content .cont .edit-containers {
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.wrapper .container .main .content .cont .edit-containers .edit-container {
+	width: 48%;
+	height: auto;
+}
+
+.wrapper .container .main .content .cont .f-buttons {
+	width: 100%;
+	height: auto;
+	margin-top: 4em;
+}
+
+.wrapper .container .main .content .cont .f-buttons .buttons {
+	width: 38%;
+	height: auto;
+	margin-top: 2em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper .container .main .content .cont .f-buttons .buttons .btn button {
+	width: 180px;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+	background: #ACDD49;
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 15px;
+	border-radius: 6px;
+}
+
+.wrapper .container .main .content .cont .f-buttons .buttons .btn button:hover {
+	background: #ffffff;
+}
+
+.wrapper .container .main .content .cont .f-buttons .buttons .btn button.cancel {
+	background: #201F3F;
+	color: #ffffff;
+}
+
+.wrapper .container .main .content .cont .f-buttons .buttons .btn button.cancel:hover {
+	background: #ffffff;
+	color: #000000;
+}
+
+.wrapper .container .main .content .cont .f-buttons .buttons .btn:nth-child(2) {
+	margin-left: 10px;
+}
+
+.wrapper .container .main .content .cont .edit-container .edit-box .bet-selecs .bet-selec .custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.wrapper .container .main .content .cont .edit-containers .edit-container .edit-box .opt .custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #2A2A4A;
+}
+
+.wrapper .container .main .content .cont .edit-containers .edit-container .edit-box .opt .select-selected {
+  background-color: #201F3F;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  font-family: Poppins-R;
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: 0.5em;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #2A2A4A;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.wrapper .container .main .content .cont .edit-containers .edit-container .edit-box .opt .select-items {
+	background-color: #201F3F;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .main .edit-container .profile-section {
+	width: 100%;
+	height: auto;
+}
+
+.wrapper .main .edit-container .profile-section .fs-title {
+	font-family: Montserrat-R;
+	font-weight: normal;
+	font-size: 13px;
+	color: #ffffff;
+	text-align: left;
+}
+
+.wrapper .main .edit-container .profile-section .profile-pic {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper .main .edit-container .profile-section .heading a {
+	text-decoration: none;
+	font-family: Poppins-R;
+	font-weight: normal;
+	font-size: 12px;
+	color: #ACDD49;
+}
+
+.wrapper .main .edit-container .profile-section .profile-pic .pic img {
+	width: 60px;
+	height: 60px;
+	resize: both;
+	border: 2px solid #ACDD49;
+	border-radius: 5px;
+}
+
+.wrapper .main .edit-container .profile-section .profile-pic .input .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.wrapper .main .edit-container .profile-section .profile-pic .input .btn {
+  border: none;
+  color: #ACDD49;
+  background: #2a2a4a;
+  padding: 8px 20px;
+  margin-top: 1em;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: Poppins-R;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.wrapper .main .edit-container .profile-section .profile-pic .input .upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.wrapper .main .edit-container .profile-section .data-inputs {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+.wrapper .main .edit-container .profile-section .data-inputs .two-inputs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper .main .edit-container .profile-section .data-inputs div {
+  margin-top: 1em;
+}
+
+.wrapper .main .edit-container .profile-section .data-inputs .two-inputs .input label, .one-input .input label {
+  font-family: Poppins-R;
+  font-size: 13px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.wrapper .main .edit-container .profile-section .data-inputs .two-inputs .input, .one-input .input {
+	width: 48.5%;
+	height: auto;
+}
+
+.wrapper .main .edit-container .profile-section .data-inputs .two-inputs .input input, .one-input .input input {
+  width: 100%;
+  height: 40px;
+  margin-top: 0.4em;
+  border: none;
+  border-radius: 4px;
+  background: #201F3F;
+  padding-left: 20px;
+  font-family: Montserrat-R;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.wrapper .main .edit-container .profile-section .data-inputs .two-inputs .input input:focus, .one-input .input input:focus {
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+}

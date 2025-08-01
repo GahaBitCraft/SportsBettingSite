@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> || Sports Betting Site</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/app.responsive.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+
+			<!-- Navbar Section -->
+			<div class="navbar">
+
+				<!-- Logo Section -->
+				<div class="logo">
+					<div class="logo-text">
+						<a href="../index.html">LOGO</a>
+					</div>
+				</div>
+				<!-- End of Logo Section -->
+
+				<!-- Navigation Section -->
+				<div class="navs">
+					<a href="../index.html">
+						<button hidden="hidden" style="background: #2A2A4A;">Wagering</button>
+					</a>
+					<a href="lottery.html">
+						<button hidden="hidden" class="active">Lottery</button>
+					</a>
+				</div>
+				<!-- End of Navigation Section -->
+
+				<!-- Dropdown Menu Section -->
+				<div class="drop">
+					<div class="dropdown">
+						<div class="dropbtn">
+							<div class="img">
+								<img src="../assets/imgs/profile/Rec.png">
+							</div>
+							<div class="name">
+								<span>Jack Micheal</span>
+							</div>
+							<div onclick="dropMenu()" class="drop">
+								<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2.03662L8.96317 8.99979L15.9263 2.03662" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="profile.html">My Account</a>
+					    <a href="wagering_details.html">Wagering Details</a>
+					    <a href="#">Lottery Details</a>
+					    <a href="">Log Out</a>
+					  </div>
+					</div>
+				</div>
+				<!-- End of Dropdown Menu Section -->
+
+				<!-- Mobile Side Menu -->
+				<div class="mobile-nav">
+					<span class="mo-btn" onclick="openMobileMenu()">&#9776;</span>
+
+					<div id="mobileMenu" class="mobile-menu">
+						<div class="mo-close-btn">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+						</div>
+						<div class="profile-img">
+							<div class="prof-img">
+								<img src="../assets/imgs/profile/Rec.png">
+							</div>
+						</div>
+						<div class="user-name">
+							<span>Jack Micheal</span>
+						</div>
+						<div class="mo-title">
+							Navigate
+						</div>
+						<div class="mo-links">
+							<div class="links">
+								<div>
+									<a href="profile.html">My Account</a>
+								</div>
+							    <div>
+							    	<a href="wagering_details.html">Wagering Details</a>
+							    </div>
+							    <div>
+							    	<a href="#">Lottery Details</a>
+							    </div>
+							    <div>
+							    	<a href="">Log Out</a>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Mobile Side Menu -->
+
+			</div>
+			<!-- End of Navbar Section -->
+
+			<!-- Main Area -->
+			<div class="main">
+				<div class="content">
+					<section id="step-form">
+					    <div class="container">
+					    	<div id="msform">
+					    		<fieldset class="tab">
+					    			<!-- Starting Slide -->
+						          	<div class="slides">
+						          		<!-- Title -->
+						          		<div class="heading">
+											<h2 class="fs-title">Last Winners: &nbsp;&nbsp;</h2>
+										</div>
+										<!-- End of Title -->
+
+										<!-- Last Players Winners -->
+											<div class="last-players-winners">
+												<div class="last-player-winner">
+													<table>
+														<thead>
+															<tr>
+																<th>Username</th>
+																<th>Won</th>
+																<th>Date</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>Iqbal46</td>
+																<td>$50</td>
+																<td>25-May-2021</td>
+															</tr>
+															<tr>
+																<td>Bauwang H</td>
+																<td>$30</td>
+																<td>25-May-2021</td>
+															</tr>
+															<tr>
+																<td>DavidRG</td>
+																<td>$20</td>
+																<td>24-May-2021</td>
+															</tr>
+															<tr>
+																<td>James24</td>
+																<td>$50</td>
+																<td>23-May-2021</td>
+															</tr>
+															<tr>
+																<td>Hunxal</td>
+																<td>$30</td>
+																<td>22-May-2021</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<!-- End of Last Players Winners -->
+									</div>
+									<!-- End of Slide -->
+						        </fieldset>
+					    	</div>
+					    </div>
+					</section>
+				</div>
+			</div>
+			<!-- End of Main Area -->
+		</div>
+	</div>
+
+</body>
+	<script src="../assets/js/app.util.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+</html>

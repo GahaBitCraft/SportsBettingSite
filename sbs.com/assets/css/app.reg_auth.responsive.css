@@ -1,0 +1,1038 @@
+/*  Copyright 2021 - SBS
+		This file contains all the styles required for Authentication and Registration pages.
+		This file contains responsive design starting from min-device-width: 360px; TO min-device-width: 1280px;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #20203c;
+  overflow: hidden;
+}
+
+@font-face {
+	font-family: Segoe Script;
+	src: url('../fonts/Segoe Script.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-R;
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .video {
+	display: none;
+}
+
+#loginForm {
+	min-height: 27.1em;
+}
+
+#signupForm {
+	max-height: 28.7em;
+}
+
+.wrapper .container .box {
+  position: absolute;
+  width: 96%;
+  height: auto;
+  left: 6.5px;
+  top: 1%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background: #2A2A4A;
+  border-radius: 4px;
+}
+
+.wrapper .container .box .logo {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .box .logo-text {
+  margin: 1em 4.5em;
+  font-size: 26px;
+  font-family: Segoe Script;
+  color: #ffffff;
+}
+
+.wrapper .container .box .logo-text.signupForm {
+  margin: 0.5em 4.5em;
+  font-size: 26px;
+  font-family: Segoe Script;
+  color: #ffffff;
+}
+
+.wrapper .container .box .box-form {
+  width: 66%;
+  padding: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: auto;
+}
+
+.wrapper .container .box .box-form form {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .box .box-form form .heading {
+  font-size: 14px;
+  font-family: Montserrat-R;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.wrapper .container .box .box-form form .form-inputs {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input {
+  width: 100%;
+  height: 40px;
+  background: #201F3F;
+  border: none;
+  border-radius: 4px;
+  padding-left: 25px;
+  font-family: Montserrat-R;
+  font-size: 13px;
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input:focus {
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::-webkit-input-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::-moz-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input:-ms-input-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::-ms-input-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+  top: 38.5%;
+  right: 50px;
+  background: #201F3F;
+  -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+  top: 44%;
+  right: 50px;
+  background: #201F3F;
+  -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+  top: 54%;
+  right: 50px;
+  background: #201F3F;
+  -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open,#close {
+  stroke-width:2px;
+  position: absolute;
+  top: 0.5px;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open {
+  display: none;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-s,#close-s {
+  stroke-width:2px;
+  position: absolute;
+  top: 0.5px;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-s {
+  display: none;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-ss,#close-ss {
+  stroke-width:2px;
+  position: absolute;
+  top: 0.5px;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-ss {
+  display: none;
+}
+
+.wrapper .container .box .box-form form .form-tag {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+}
+
+.wrapper .container .box .box-form form .form-tag a {
+  text-decoration: none;
+  font-family: Montserrat-R;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.wrapper .container .box .box-form form .form-tag a:hover {
+  color: #ACDD49;
+}
+
+.wrapper .container .box .box-form form .form-btn {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+}
+
+.wrapper .container .box .box-form form .form-btn .btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper .container .box .box-form form .form-btn .btn button {
+  width: 40%;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  background: #ACDD49;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Montserrat-R;
+  color: #2A2A4A;
+  cursor: pointer;
+}
+
+.wrapper .container .box .box-form form .form-btn .btn button:hover {
+  background: #ffffff;
+}
+
+.wrapper .container .box .box-form form .form-btn .text {
+  margin-top: 2em;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 12px;
+  font-family: Montserrat-R;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.wrapper .container .box .box-form form .form-btn .text span {
+  font-size: 12px;
+  font-family: Montserrat-R;
+  font-weight: normal;
+}
+
+.wrapper .container .box .box-form form .form-btn .text span a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.wrapper .container .box .box-form form .form-btn .text span a:hover {
+  color: #ACDD49;
+}
+
+.wrapper .container .box .box-form form .form-btn .social-btns {
+  width: 100%;
+  height: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper .container .box .box-form form .form-btn .social-btns button {
+  width: 40px;
+  height: 35px;
+  margin-left: 20px;
+  background: #201F3F;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.wrapper .container .box .box-form form .form-btn .social-btns button:hover {
+  opacity: 1;
+}
+
+
+@media screen and (min-width: 360px) {
+
+	#loginForm {
+		min-height: 31.5em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 31.5em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 69.5%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 5.2em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 5.2em;
+	}
+
+	.wrapper .container .box {
+	  left: 7px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 34%;
+	  right: 46px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 43%;
+	  right: 46px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 52%;
+	  right: 46px;
+	}
+}
+
+
+@media screen and (min-width: 375px) and (min-height: 667px) {
+
+	#loginForm {
+		min-height: 33.2em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 33.2em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 69.5%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 5.5em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 5.5em;
+	}
+
+	.wrapper .container .box {
+	  left: 7.5px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 32.8%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 41.2%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 49.8%;
+	  right: 50px;
+	}
+}
+
+
+@media screen and (min-width: 375px) and (min-height: 812px) {
+
+	#loginForm {
+		min-height: 42.2em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 42.2em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 69.5%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 5.5em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 5.5em;
+	}
+
+	.wrapper .container .box {
+	  left: 7.5px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 26.8%;
+	  right: 56px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 33.9%;
+	  right: 56px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 40.9%;
+	  right: 56px;
+	}
+}
+
+
+@media screen and (min-width: 411px) and (min-height: 731px) {
+
+	#loginForm {
+		min-height: 37.1em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 37.1em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 72.5%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 6.2em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 6.2em;
+	}
+
+	.wrapper .container .box {
+	  left: 7.6px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 29.8%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 37.6%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 45.4%;
+	  right: 50px;
+	}
+}
+
+
+@media screen and (min-width: 411px) and (min-height: 823px) {
+
+	#loginForm {
+		min-height: 42.8em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 42.8em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 72.5%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 6.2em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 6.2em;
+	}
+
+	.wrapper .container .box {
+	  left: 7.6px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 26.5%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 33.5%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 40.4%;
+	  right: 50px;
+	}
+}
+
+
+@media screen and (min-width: 414px) {
+
+	#loginForm {
+		min-height: 37.5em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 37.5em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 72.5%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 6.4em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 6.4em;
+	}
+
+	.wrapper .container .box {
+	  left: 7.6px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 29.6%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 37.5%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 45.2%;
+	  right: 50px;
+	}
+}
+
+
+@media screen and (min-width: 540px) {
+
+	#loginForm {
+		min-height: 36.5em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 36.5em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 79.5%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 8.8em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 8.8em;
+	}
+
+	.wrapper .container .box {
+	  left: 7.8px;
+	  width: 97%;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 30.4%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 38.4%;
+	  right: 50px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 46.2%;
+	  right: 50px;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+
+	#loginForm {
+		min-height: 55.1em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 55.1em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 85%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 13em;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 13em;
+	}
+
+	.wrapper .container .box {
+	  left: 7.8px;
+	  width: 98%;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 21.5%;
+	  right: 55px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 27%;
+	  right: 55px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 32.5%;
+	  right: 55px;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+
+	.wrapper .container .box {
+	  width: 80%;
+	  left: 9.5%;
+	  top: 10%;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 15em;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 86.5%;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  top: 21.5%;
+	  right: 55px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  top: 27%;
+	  right: 55px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  top: 32.5%;
+	  right: 55px;
+	}
+}
+
+
+@media screen and (min-width: 1280px) {
+
+	.wrapper {
+	  width: 100%;
+	  height: auto;
+	}
+
+	.wrapper .container {
+	  width: 100%;
+	  height: auto;
+	}
+
+	#loginForm {
+		min-height: 27.1em;
+	}
+
+	#signupForm {
+		max-height: 0em;
+		min-height: 28.5em;
+	}
+
+	.wrapper .container .box {
+	  position: absolute;
+	  width: 34%;
+	  height: auto;
+	  left: 33.5%;
+	  top: 10%;
+	  padding-top: 10px;
+	  padding-bottom: 20px;
+	  background: #2A2A4A;
+	  border-radius: 14px;
+	}
+
+	.wrapper .container .box .logo {
+	  width: 100%;
+	  height: auto;
+	}
+
+	.wrapper .container .box .logo-text {
+	  margin: 1em 7.5em;
+	  font-size: 26px;
+	  font-family: Segoe Script;
+	  color: #ffffff;
+	}
+
+	.wrapper .container .box .logo-text.signupForm {
+	  margin: 1em 7.5em;
+	  font-size: 26px;
+	  font-family: Segoe Script;
+	  color: #ffffff;
+	}
+
+	.wrapper .container .box .box-form {
+	  width: 78%;
+	  padding: 40px;
+	  padding-top: 0;
+	  padding-bottom: 0;
+	  height: auto;
+	}
+
+	.wrapper .container .box .box-form form {
+	  width: 100%;
+	  height: auto;
+	}
+
+	.wrapper .container .box .box-form form .heading {
+	  font-size: 16px;
+	  font-family: Montserrat-R;
+	  color: #ffffff;
+	  font-weight: normal;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs {
+	  width: 100%;
+	  height: auto;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input {
+	  width: 100%;
+	  height: auto;
+	  margin-top: 1em;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input input {
+	  width: 100%;
+	  height: 40px;
+	  background: #201F3F;
+	  border: none;
+	  border-radius: 4px;
+	  padding-left: 25px;
+	  font-family: Montserrat-R;
+	  font-size: 13px;
+	  color: #D6D6D6;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input input:focus {
+	  outline: none;
+	  background: #ffffff;
+	  color: #000000;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input input::-webkit-input-placeholder {
+	  color: #D6D6D6;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input input::-moz-placeholder {
+	  color: #D6D6D6;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input input:-ms-input-placeholder {
+	  color: #D6D6D6;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input input::-ms-input-placeholder {
+	  color: #D6D6D6;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input input::placeholder {
+	  color: #D6D6D6;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+	  height: 25px;
+	  width: 25px;
+	  border-radius: 50%;
+	  position: absolute;
+	  -webkit-transform: translate(0,-50%);
+	      -ms-transform: translate(0,-50%);
+	          transform: translate(0,-50%);
+	  top: 38.8%;
+	  right: 50px;
+	  background: #201F3F;
+	  -webkit-transition: 0.5s;
+	        -o-transition: 0.5s;
+	        transition: 0.5s;
+	  cursor: pointer;
+	  z-index: 2;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+	  height: 25px;
+	  width: 25px;
+	  border-radius: 50%;
+	  position: absolute;
+	  -webkit-transform: translate(0,-50%);
+	      -ms-transform: translate(0,-50%);
+	          transform: translate(0,-50%);
+	  top: 47%;
+	  right: 50px;
+	  background: #201F3F;
+	  -webkit-transition: 0.5s;
+	        -o-transition: 0.5s;
+	        transition: 0.5s;
+	  cursor: pointer;
+	  z-index: 2;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+	  height: 25px;
+	  width: 25px;
+	  border-radius: 50%;
+	  position: absolute;
+	  -webkit-transform: translate(0,-50%);
+	      -ms-transform: translate(0,-50%);
+	          transform: translate(0,-50%);
+	  top: 57%;
+	  right: 50px;
+	  background: #201F3F;
+	  -webkit-transition: 0.5s;
+	        -o-transition: 0.5s;
+	        transition: 0.5s;
+	  cursor: pointer;
+	  z-index: 2;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #open,#close {
+	  stroke-width:2px;
+	  position: absolute;
+	  top: 0.5px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #open {
+	  display: none;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #open-s,#close-s {
+	  stroke-width:2px;
+	  position: absolute;
+	  top: 0.5px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #open-s {
+	  display: none;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #open-ss,#close-ss {
+	  stroke-width:2px;
+	  position: absolute;
+	  top: 0.5px;
+	}
+
+	.wrapper .container .box .box-form form .form-inputs .input #open-ss {
+	  display: none;
+	}
+
+	.wrapper .container .box .box-form form .form-tag {
+	  width: 100%;
+	  height: auto;
+	  margin-top: 0.5em;
+	}
+
+	.wrapper .container .box .box-form form .form-tag a {
+	  text-decoration: none;
+	  font-family: Montserrat-R;
+	  font-size: 12px;
+	  font-weight: normal;
+	  color: #ffffff;
+	}
+
+	.wrapper .container .box .box-form form .form-tag a:hover {
+	  color: #ACDD49;
+	}
+
+	.wrapper .container .box .box-form form .form-btn {
+	  width: 100%;
+	  height: auto;
+	  margin-top: 1.5em;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .btn {
+	  width: 100%;
+	  height: auto;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .btn button {
+	  width: 40%;
+	  height: 40px;
+	  margin-left: 20px;
+	  border: none;
+	  background: #ACDD49;
+	  border-radius: 4px;
+	  font-size: 16px;
+	  font-family: Montserrat-R;
+	  color: #2A2A4A;
+	  cursor: pointer;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .btn button:hover {
+	  background: #ffffff;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .text {
+	  margin-top: 2em;
+	  margin-left: 20px;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  font-size: 12px;
+	  font-family: Montserrat-R;
+	  color: #ffffff;
+	  font-weight: normal;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .text span {
+	  font-size: 12px;
+	  font-family: Montserrat-R;
+	  font-weight: normal;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .text span a {
+	  text-decoration: none;
+	  color: #e0e0e0;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .text span a:hover {
+	  color: #ACDD49;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .social-btns {
+	  width: 100%;
+	  height: auto;
+	  margin-top: 2em;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .social-btns button {
+	  width: 40px;
+	  height: 35px;
+	  margin-left: 20px;
+	  background: #201F3F;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  opacity: 0.8;
+	}
+
+	.wrapper .container .box .box-form form .form-btn .social-btns button:hover {
+	  opacity: 1;
+	}
+
+	.wrapper .container .video {
+		display: block;
+		width: 100%;
+		height: auto;
+		background: #ffffff;
+	}
+
+	.wrapper .container .video #backVideo {
+		width: 100%;
+    height: 700px;
+    object-fit: cover;
+    z-index: -100;
+	}
+}

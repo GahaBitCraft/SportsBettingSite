@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> || Sports Betting Site</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/app.responsive.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+
+			<!-- Navbar Section -->
+			<div class="navbar">
+
+				<!-- Logo Section -->
+				<div class="logo">
+					<div class="logo-text">
+						<a href="../index.html">LOGO</a>
+					</div>
+				</div>
+				<!-- End of Logo Section -->
+
+				<!-- Navigation Section -->
+				<div class="navs">
+					<a href="../index.html">
+						<button style="background: #2A2A4A;">Wagering</button>
+					</a>
+					<a href="lottery.html">
+						<button class="active">Lottery</button>
+					</a>
+				</div>
+				<!-- End of Navigation Section -->
+
+				<!-- Dropdown Menu Section -->
+				<div class="drop">
+					<div class="dropdown">
+						<div class="dropbtn">
+							<div class="img">
+								<img src="../assets/imgs/profile/Rec.png">
+							</div>
+							<div class="name">
+								<span>Jack Micheal</span>
+							</div>
+							<div onclick="dropMenu()" class="drop">
+								<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2.03662L8.96317 8.99979L15.9263 2.03662" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="profile.html">My Account</a>
+					    <a href="wagering_details.html">Wagering Details</a>
+					    <a href="#">Lottery Details</a>
+					    <a href="">Log Out</a>
+					  </div>
+					</div>
+				</div>
+				<!-- End of Dropdown Menu Section -->
+
+				<!-- Mobile Side Menu -->
+				<div class="mobile-nav">
+					<span class="mo-btn" onclick="openMobileMenu()">&#9776;</span>
+
+					<div id="mobileMenu" class="mobile-menu">
+						<div class="mo-close-btn">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+						</div>
+						<div class="profile-img">
+							<div class="prof-img">
+								<img src="../assets/imgs/profile/Rec.png">
+							</div>
+						</div>
+						<div class="user-name">
+							<span>Jack Micheal</span>
+						</div>
+						<div class="mo-title">
+							Navigate
+						</div>
+						<div class="mo-links">
+							<div class="links">
+								<div>
+									<a href="profile.html">My Account</a>
+								</div>
+							    <div>
+							    	<a href="wagering_details.html">Wagering Details</a>
+							    </div>
+							    <div>
+							    	<a href="#">Lottery Details</a>
+							    </div>
+							    <div>
+							    	<a href="">Log Out</a>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Mobile Side Menu -->
+
+			</div>
+			<!-- End of Navbar Section -->
+
+			<!-- Main Area -->
+			<div class="main">
+				<div class="content">
+					<section id="step-form">
+					    <div class="container">
+					    	<form id="msform">
+					    		<fieldset class="tab">
+
+					    			<!-- Starting Slide -->
+						          	<div class="slides">
+
+						          		<!-- Title -->
+							          	<div class="heading" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+											<div class="tl">
+												<h2 class="fs-title">Select a lottery:</h2>
+											</div>
+											<div class="btn last-win">
+												<button><a href="last_winners.html">View Last Winners</a></button>
+											</div>
+										</div>
+										<!-- End of Title -->
+
+										<!-- Content Box -->
+										<div class="content-box">
+
+											<!-- Starting Lotteries' Container -->
+											<div class="lotteries-container">
+												<div id="lottriesSec" class="lotteries">
+
+													<!-- Dummy Lottery -->
+													<!-- Let it be to Work Lottery Selection Properly as it works as The Base Element -->
+													<div class="lottery" hidden="hidden">
+
+														<div class="img">
+															<img src="../assets/imgs/lottery/lottery.png">
+														</div>
+
+														<div class="info">
+															<div class="title">Lottery 0</div>
+															<div class="sub-title">Pot <span>$150</span></div>
+															<div class="btn-cont">
+																<div class="btn">
+																	<button value="Lottery 0" type="button" class="lotteryButton lottBtnActive">Select</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="sub-info">
+															<div class="countdown-box-lott">
+																<div class="title"><span>$10</span> to Participate</div>
+																<div style="background: #201F3F;" class="countdown-lott">
+																	<table>
+																		<tr>
+																			<th>04</th>
+																			<th>02</th>
+																			<th>55</th>
+																		</tr>
+																		<tr>
+																			<td>Days</td>
+																			<td>Hours</td>
+																			<td>Minutes</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<!-- Let it be to Work Lottery Selection Properly as it works as The Base Element -->
+													<!-- End of Dummy Lottery -->
+
+													<!-- Lottery -->
+													<div class="lottery">
+
+														<div class="img">
+															<img src="../assets/imgs/lottery/lottery.png">
+														</div>
+
+														<div class="info">
+															<div class="title">Lottery 1</div>
+															<div class="sub-title">Pot <span>$150</span></div>
+															<div class="btn-cont">
+																<div class="btn">
+																	<button value="Lottery 1" type="button" class="lotteryButton">Select</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="sub-info">
+															<div class="countdown-box-lott">
+																<div class="title"><span>$10</span> to Participate</div>
+																<div style="background: #201F3F;" class="countdown-lott">
+																	<table>
+																		<tr>
+																			<th>04</th>
+																			<th>02</th>
+																			<th>55</th>
+																		</tr>
+																		<tr>
+																			<td>Days</td>
+																			<td>Hours</td>
+																			<td>Minutes</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<!-- End of Lottery -->
+
+													<!-- Lottery -->
+													<div class="lottery">
+
+														<div class="img">
+															<img src="../assets/imgs/lottery/lottery.png">
+														</div>
+
+														<div class="info">
+															<div class="title">Lottery 2</div>
+															<div class="sub-title">Pot <span>$150</span></div>
+															<div class="btn-cont">
+																<div class="btn">
+																	<button value="Lottery 2" type="button" class="lotteryButton">Select</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="sub-info">
+															<div class="countdown-box-lott">
+																<div class="title"><span>$10</span> to Participate</div>
+																<div style="background: #201F3F;" class="countdown-lott">
+																	<table>
+																		<tr>
+																			<th>04</th>
+																			<th>02</th>
+																			<th>55</th>
+																		</tr>
+																		<tr>
+																			<td>Days</td>
+																			<td>Hours</td>
+																			<td>Minutes</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<!-- End of Lottery -->
+
+													<!-- Lottery -->
+													<div class="lottery">
+
+														<div class="img">
+															<img src="../assets/imgs/lottery/lottery.png">
+														</div>
+
+														<div class="info">
+															<div class="title">Lottery 3</div>
+															<div class="sub-title">Pot <span>$150</span></div>
+															<div class="btn-cont">
+																<div class="btn">
+																	<button value="Lottery 3" type="button" class="lotteryButton">Select</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="sub-info">
+															<div class="countdown-box-lott">
+																<div class="title"><span>$10</span> to Participate</div>
+																<div style="background: #201F3F;" class="countdown-lott">
+																	<table>
+																		<tr>
+																			<th>04</th>
+																			<th>02</th>
+																			<th>55</th>
+																		</tr>
+																		<tr>
+																			<td>Days</td>
+																			<td>Hours</td>
+																			<td>Minutes</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<!-- End of Lottery -->
+
+													<!-- Lottery -->
+													<div class="lottery">
+
+														<div class="img">
+															<img src="../assets/imgs/lottery/lottery.png">
+														</div>
+
+														<div class="info">
+															<div class="title">Lottery 4</div>
+															<div class="sub-title">Pot <span>$150</span></div>
+															<div class="btn-cont">
+																<div class="btn">
+																	<button value="Lottery 4" type="button" class="lotteryButton">Select</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="sub-info">
+															<div class="countdown-box-lott">
+																<div class="title"><span>$10</span> to Participate</div>
+																<div style="background: #201F3F;" class="countdown-lott">
+																	<table>
+																		<tr>
+																			<th>04</th>
+																			<th>02</th>
+																			<th>55</th>
+																		</tr>
+																		<tr>
+																			<td>Days</td>
+																			<td>Hours</td>
+																			<td>Minutes</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<!-- End of Lottery -->
+
+												</div>
+
+
+												<!-- Control Buttons' Section -->
+
+												<div style="display: flex; flex-wrap: wrap; justify-content: center;" class="fs-buttons">
+												  	<div class="buttons">
+												  		<div class="btn">
+												  			<button>Participate</button>
+												  		</div>
+												  		<div class="btn">
+												  			<a href="../index.html"><button type="button" class="cancel">Cancel</button></a>
+												  		</div>
+												  	</div>
+												</div>
+												<!-- End of Control Buttons' Section -->
+
+											</div>
+											<!-- End of Lotteries' Container -->
+
+										</div>
+										<!-- End of Content Box -->
+
+						          	</div>
+						          	<!-- End of Slide -->
+
+						        </fieldset>
+					    	</form>
+					    </div>
+					</section>
+				</div>
+			</div>
+			<!-- End of Main Area -->
+		</div>
+	</div>
+
+</body>
+	<script src="../assets/js/app.util.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+</html>

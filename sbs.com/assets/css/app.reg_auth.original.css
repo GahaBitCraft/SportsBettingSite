@@ -1,0 +1,310 @@
+/*  Copyright 2021 - SBS
+    This is original file of all the styles required for Authentication and Registration pages.
+    This file does not contain responsive design.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #20203c;
+}
+
+@font-face {
+	font-family: Segoe Script;
+	src: url('../fonts/Segoe Script.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-R;
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .box {
+  position: absolute;
+  width: 34%;
+  height: auto;
+  left: 33.5%;
+  top: 10%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background: #2A2A4A;
+  border-radius: 14px;
+}
+
+.wrapper .container .box .logo {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .box .logo-text {
+  margin: 1em 7.5em;
+  font-size: 26px;
+  font-family: Segoe Script;
+  color: #ffffff;
+}
+
+.wrapper .container .box .box-form {
+  width: 78%;
+  padding: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: auto;
+}
+
+.wrapper .container .box .box-form form {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .box .box-form form .heading {
+  font-size: 16px;
+  font-family: Montserrat-R;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.wrapper .container .box .box-form form .form-inputs {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input {
+  width: 100%;
+  height: 40px;
+  background: #201F3F;
+  border: none;
+  border-radius: 4px;
+  padding-left: 25px;
+  font-family: Montserrat-R;
+  font-size: 13px;
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input:focus {
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::-webkit-input-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::-moz-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input:-ms-input-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::-ms-input-placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input input::placeholder {
+  color: #D6D6D6;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+  top: 44%;
+  right: 50px;
+  background: #201F3F;
+  -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-s {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+  top: 47%;
+  right: 50px;
+  background: #201F3F;
+  -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #eye-wrapper-ss {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+  top: 57%;
+  right: 50px;
+  background: #201F3F;
+  -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open,#close {
+  stroke-width:2px;
+  position: absolute;
+  top: 0.5px;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open {
+  display: none;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-s,#close-s {
+  stroke-width:2px;
+  position: absolute;
+  top: 0.5px;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-s {
+  display: none;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-ss,#close-ss {
+  stroke-width:2px;
+  position: absolute;
+  top: 0.5px;
+}
+
+.wrapper .container .box .box-form form .form-inputs .input #open-ss {
+  display: none;
+}
+
+.wrapper .container .box .box-form form .form-tag {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+}
+
+.wrapper .container .box .box-form form .form-tag a {
+  text-decoration: none;
+  font-family: Montserrat-R;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.wrapper .container .box .box-form form .form-tag a:hover {
+  color: #ACDD49;
+}
+
+.wrapper .container .box .box-form form .form-btn {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+}
+
+.wrapper .container .box .box-form form .form-btn .btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper .container .box .box-form form .form-btn .btn button {
+  width: 40%;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  background: #ACDD49;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Montserrat-R;
+  color: #2A2A4A;
+  cursor: pointer;
+}
+
+.wrapper .container .box .box-form form .form-btn .btn button:hover {
+  background: #ffffff;
+}
+
+.wrapper .container .box .box-form form .form-btn .text {
+  margin-top: 2em;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 12px;
+  font-family: Montserrat-R;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.wrapper .container .box .box-form form .form-btn .text span {
+  font-size: 12px;
+  font-family: Montserrat-R;
+  font-weight: normal;
+}
+
+.wrapper .container .box .box-form form .form-btn .text span a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.wrapper .container .box .box-form form .form-btn .text span a:hover {
+  color: #ACDD49;
+}
+
+.wrapper .container .box .box-form form .form-btn .social-btns {
+  width: 100%;
+  height: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper .container .box .box-form form .form-btn .social-btns button {
+  width: 40px;
+  height: 35px;
+  margin-left: 20px;
+  background: #201F3F;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.wrapper .container .box .box-form form .form-btn .social-btns button:hover {
+  opacity: 1;
+}

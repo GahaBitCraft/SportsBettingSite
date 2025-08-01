@@ -1,0 +1,90 @@
+/*
+	©2021 - SBS™ by JRG
+
+	Files and Directories:-
+
+	------> sbs.com
+			------> admin [Admin Area]
+					------> assets
+							------> css
+									------> admin.app.original.css
+									------> admin.app.responsive.css
+							------> fonts
+									------> Montserrat-Bold.ttf
+									------> Montserrat-Regular.ttf
+									------> Poppins-Regular.ttf
+									------> Segoe Script.ttf
+							------> imgs
+									------> profile
+											------> Rec.png
+							------> js
+									------> active.js
+									------> admin.app.js
+					------> pgs
+							------> add_bet.html
+							------> add_member.html
+							------> create_a_bet.html
+							------> edit_bet.html
+							------> edit_member.html
+							------> members.html
+							------> profile.html
+							------> wagers.html
+					------> index.html
+
+			------> assets [User Area]
+					------> css
+							------> app.original.css
+							------> app.reg_auth.original.css
+							------> app.reg_auth.responsive.css
+							------> app.responsive.css
+					------> fonts
+							------> Montserrat-Bold.ttf
+							------> Montserrat-Regular.ttf
+							------> Poppins-Regular.ttf
+							------> Segoe Script.ttf
+					------> imgs
+							------> bet
+									------> Bulls.png
+									------> Mavericks.png
+							------> lottery
+									------> lottery.png
+							------> matchup
+									------> B vs C.png
+									------> B vs M.png
+									------> M vs S.png
+							------> payment
+									------> BTC-S.png
+									------> BTC.png
+									------> M.png
+									------> PP.png
+									------> T.png
+									------> VISA.png
+									------> VM.png
+							------> poster
+									------> Stock Sports Video Poster.jpeg
+							------> profile
+									------> Rec.png
+							------> sport
+									------> Baseball.png
+									------> Basketball.png
+									------> Football.png
+									------> Hockey.png
+					------> js
+							------> active.js
+							------> app.js
+							------> app.util.js
+							------> video.js
+					------> video
+							------> Stock Sports Video.mp4
+			------> pgs
+					------> last_winners.html
+					------> live_stats.html
+					------> live_stats_sec.html
+					------> lottery.html
+					------> profile.html
+					------> wagering_details.html
+			------> port
+					------> authentication.html
+					------> registration.html
+			------> index.html
+			------> readme.md

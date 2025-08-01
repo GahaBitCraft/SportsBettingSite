@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> || Authentication</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/app.reg_auth.responsive.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+  	<div class="container">
+
+  		<!-- Video Section -->
+  		<div class="video">
+				<video poster="../assets/imgs/poster/Stock Sports Video Poster.jpeg" autoplay muted loop id="backVideo">
+				  <source src="../assets/video/Stock Sports Video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<!-- End of Video Section -->
+
+  		<div class="box">
+  			<!-- Logo Section -->
+  			<div class="logo">
+  				<div class="logo-text">LOGO</div>
+  			</div>
+  			<!-- End of Logo Section -->
+
+  			<!-- Log In Form Section -->
+  			<div id="loginForm" class="box-form">
+  				<!-- Starting Form -->
+  				<form method="" action="#">
+
+  					<!-- Title -->
+  					<div class="form-head">
+  						<div class="heading">LOGIN</div>
+  					</div>
+  					<!-- End of Title -->
+
+  					<!-- Inputs' Section -->
+  					<div class="form-inputs">
+  						<div class="input">
+  							<input type="email" name="" placeholder="Email">
+  						</div>
+  						<div class="input">
+  							<input id="password" onfocus="boxFocus()" onmouseout="boxUnFocus()" class="password" type="password" name="" placeholder="Password">
+  							<div id="eye-wrapper" onclick="toggle()">
+  								<svg id="open" width="25" height="25">
+  									<g stroke="#D6D6D6" stroke-miterlimit="10">
+  										<path d="M21.632 12.5a9.759 9.759 0 01-18.264 0 9.759 9.759 0 0118.264 0z" fill="none"/>
+  										<circle cx="12.5" cy="12.5" r="3" fill="#D6D6D6"/>
+  										<path fill="none" d="M12.5 5v1-4M9.291 6.337L7.709 2.663M15.709 6.337l1.582-3.674"/>
+  									</g>
+  								</svg>
+  								<svg id="close" width="25" height="25">
+  									<g fill="none" stroke="#D6D6D6" stroke-miterlimit="10">
+  										<path d="M21.632 12.5a9.759 9.759 0 01-18.264 0M12.5 19.5v-1 4M9.291 18.163l-1.582 3.674M15.709 18.163l1.582 3.674"/>
+  									</g>
+  								</svg>
+  							</div>
+  						</div>
+  					</div>
+  					<!-- End of Inputs' Section -->
+
+  					<div class="form-tag">
+  						<div class="tag">
+  							<a href="">Forgot Password?</a>
+  						</div>
+  					</div>
+
+  					<!-- Buttons' Section -->
+  					<div class="form-btn">
+  						<div class="btn">
+  							<button>Login</button>
+  						</div>
+  						<div class="text">Or Continue with</div>
+  						<div class="social-btns">
+  							<a href="">
+  								<button>
+  									<svg width="24" height="35" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M45.0624 18.5929H43.25V18.4995H23V27.4995H35.7159C33.8608 32.7386 28.8759 36.4995 23 36.4995C15.5446 36.4995 9.50002 30.4549 9.50002 22.9995C9.50002 15.5441 15.5446 9.4995 23 9.4995C26.4414 9.4995 29.5723 10.7977 31.9561 12.9184L38.3203 6.55425C34.3018 2.80912 28.9265 0.499496 23 0.499496C10.5744 0.499496 0.500023 10.5739 0.500023 22.9995C0.500023 35.4251 10.5744 45.4995 23 45.4995C35.4256 45.4995 45.5 35.4251 45.5 22.9995C45.5 21.4909 45.3448 20.0182 45.0624 18.5929Z" fill="#FFC107"/>
+									</svg>
+  								</button>
+  							</a>
+  							<a href="">
+  								<button>
+  									<svg width="12" height="32" viewBox="0 0 23 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.9416 44V23.9622H21.7534L22.766 16.1167H14.9416V11.1195C14.9416 8.85558 15.5772 7.30556 18.8513 7.30556H23V0.310907C20.9814 0.0962291 18.9525 -0.00742743 16.9223 0.000413583C10.9014 0.000413583 6.76746 3.6481 6.76746 10.3445V16.1021H0V23.9475H6.78224V44H14.9416Z" fill="#ffffff"/>
+									</svg>
+  								</button>
+  							</a>
+  						</div>
+  						<div class="text">Doesn't have an account?&nbsp;<span><a href="registration.html">SignUp</a></span></div>
+  					</div>
+  					<!-- End of Buttons' Section -->
+
+  				</form>
+  				<!-- End of Form -->
+  			</div>
+  			<!-- End of Log In Form Section -->
+  		</div>
+  	</div>
+  </div>
+
+</body>
+	<script src="../assets/js/app.util.js"></script>
+	<script src="../assets/js/video.js"></script>
+</html>

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> || Sports Betting Site</title>
+	<!--<link rel="stylesheet" type="text/css" href="assets/css/app.css">-->
+	<link rel="stylesheet" type="text/css" href="assets/css/app.responsive.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+
+			<!-- Navbar Section -->
+			<div class="navbar">
+
+				<!-- Logo Section -->
+				<div class="logo">
+					<div class="logo-text">
+						<a href="index.html">LOGO</a>
+					</div>
+				</div>
+				<!-- End of Logo Section -->
+
+				<!-- Navigation Section -->
+				<div class="navs">
+					<a href="index.html"><button class="active">Wagering</button></a>
+					<a href="pgs/lottery.html"><button>Lottery</button></a>
+				</div>
+				<!-- End of Navigation Section -->
+
+				<!-- Dropdown Menu -->
+				<div class="drop">
+					<div class="dropdown">
+						<div class="dropbtn">
+							<div class="img">
+								<img src="assets/imgs/profile/Rec.png">
+							</div>
+							<div class="name">
+								<span>Jack Micheal</span>
+							</div>
+							<div onclick="dropMenu()" class="drop">
+								<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2.03662L8.96317 8.99979L15.9263 2.03662" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="pgs/profile.html">My Account</a>
+					    <a href="pgs/wagering_details.html">Wagering Details</a>
+					    <a href="#">Lottery Details</a>
+					    <a href="">Log Out</a>
+					  </div>
+					</div>
+				</div>
+				<!-- End of Dropdown Menu -->
+
+				<!-- Mobile Side Menu -->
+				<div class="mobile-nav">
+					<span class="mo-btn" onclick="openMobileMenu()">&#9776;</span>
+
+					<div id="mobileMenu" class="mobile-menu">
+						<div class="mo-close-btn">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeMobileMenu()">&times;</a>
+						</div>
+						<div class="profile-img">
+							<div class="prof-img">
+								<img src="assets/imgs/profile/Rec.png">
+							</div>
+						</div>
+						<div class="user-name">
+							<span>Jack Micheal</span>
+						</div>
+						<div class="mo-title">
+							Navigate
+						</div>
+						<div class="mo-links">
+							<div class="links">
+								<div>
+									<a href="pgs/profile.html">My Account</a>
+								</div>
+							    <div>
+							    	<a href="pgs/wagering_details.html">Wagering Details</a>
+							    </div>
+							    <div>
+							    	<a href="#">Lottery Details</a>
+							    </div>
+							    <div>
+							    	<a href="">Log Out</a>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Mobile Side Menu -->
+				
+			</div>
+			<!-- End of Navbar Section -->
+
+			<!-- Main Area -->
+			<div class="main">
+				<div class="content">
+					<!-- Step by Step Form -->
+					<section id="step-form">
+					    <div class="container">
+					      <div id="msform" method="post" enctype="multipart/form-data">
+
+					      	<!-- Progress Bar -->
+
+					        <div class="progress-nav">
+
+					        	<!-- Back Button -->
+					        	<div id="backBtn" class="bck-btn">
+									<button id="goBackTo" onclick="moveBack(this.id)" title="Go Back">
+										<svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.34818 0L0 9.34808L9.34818 18.6962L12 16.0442L5.30383 9.34808L12 2.65201L9.34818 0Z" fill="white"/>
+											</svg>
+									</button>
+								</div>
+								<!-- End of Back Button -->
+
+								<!-- Progress Nav -->
+					        	<div class="progress-container">
+					        		<ul id="progressbar">
+							          <li id="prog-1">
+							          	<div class="number-border active">1</div>
+							          	<div class="title active"><span>Select Sports</span></div>
+							          </li>
+							          <li id="prog-2">
+							          	<div class="number-border">2</div>
+							          	<div class="title"><span>Wager Amount</span></div>
+							          </li>
+							          <li id="prog-3">
+							          	<div class="number-border">3</div>
+							          	<div class="title"><span>Choose Bet</span></div>
+							          </li>
+							          <li id="prog-4">
+							          	<div class="number-border">4</div>
+							          	<div class="title"><span>Payment Method</span></div>
+							          </li>
+							        </ul>
+					        	</div>
+					        	<!-- End of Progress Nav -->
+					        </div>
+
+					        <!-- End of Progress Bar -->
+
+					        <!-- Main/First/Select Sports Section -->
+					        <fieldset id="SelectSportAndMatchup" class="tab">
+					        	<!-- Starting Form -->
+					        	<form id="selectSportAndMatchup">
+
+					        		<!-- Starting First Slide -->
+					        		<div class="slides">
+
+										<div class="heading">
+											<h2 class="fs-title">Select a Sport</h2>
+										</div>
+
+										<!-- Sports Section -->
+										<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+										    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+										    	<!-- Sport -->
+										    	<li>
+										            <div class="uk-panel">
+										                <div class="box">
+										                	<div class="img">
+											                	<img src="assets/imgs/sport/Football.png">
+											                </div>
+											                <div class="others">
+											                	<div class="title">
+											                		Football
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="sport" type="radio" name="sport" value="Football" checked="checked">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Sport -->
+
+										        <!-- Sport -->
+										        <li>
+										            <div class="uk-panel">
+										                <div class="box">
+										                	<div class="img">
+											                	<img src="assets/imgs/sport/Hockey.png">
+											                </div>
+											                <div class="others">
+											                	<div class="title">
+											                		Hockey
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="sport" type="radio" name="sport" value="Hockey">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Sport -->
+
+										        <!-- Sport -->
+										        <li>
+										            <div class="uk-panel">
+										                <div class="box">
+										                	<div class="img">
+											                	<img src="assets/imgs/sport/Basketball.png">
+											                </div>
+											                <div class="others">
+											                	<div class="title">
+											                		Basketball
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="sport" type="radio" name="sport" value="Basketball">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Sport -->
+
+										        <!-- Sport -->
+										        <li>
+										            <div class="uk-panel">
+										                <div class="box">
+										                	<div class="img">
+											                	<img src="assets/imgs/sport/Baseball.png">
+											                </div>
+											                <div class="others">
+											                	<div class="title">
+											                		Baseball
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="sport" type="radio" name="sport" value="Baseball">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Sport -->
+										    </ul>
+
+										    <!-- Controller -->
+										    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+										    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+										    <!-- End of Controller -->
+
+										</div>
+										<!-- End of Sports Section -->
+									  </div>
+
+									  <!-- End of First Slide -->
+
+									  <!-- Starting Second Slide -->
+									  <div class="slides">
+
+										<div class="heading">
+											<h2 class="fs-title">Select a Matchup</h2>
+										</div>
+
+										<!-- Matchup Section -->
+										<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+										    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+										    	<!-- Matchup -->
+										    	<li class="matchup">
+										            <div class="uk-panel">
+										                <div class="box-matchup">
+										                	<div class="img-matchup">
+											                	<img src="assets/imgs/matchup/B vs M.png">
+											                </div>
+											                <div class="others-matchup">
+											                	<div class="title">
+											                		Bulls vs Maverics
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="matchup" type="radio" name="matchup" value="Bulls vs Maverics" checked="checked">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Matchup -->
+
+										        <!-- Matchup -->
+										        <li class="matchup">
+										            <div class="uk-panel">
+										                <div class="box-matchup">
+										                	<div class="img-matchup">
+											                	<img src="assets/imgs/matchup/M vs S.png">
+											                </div>
+											                <div class="others-matchup">
+											                	<div class="title">
+											                		Manchester vs Shouthhampton
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="matchup" type="radio" name="matchup" value="Manchester vs Shouthhampton">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Matchup -->
+
+										        <!-- Matchup -->
+										        <li class="matchup">
+										            <div class="uk-panel">
+										                <div class="box-matchup">
+										                	<div class="img-matchup">
+											                	<img src="assets/imgs/matchup/B vs C.png">
+											                </div>
+											                <div class="others-matchup">
+											                	<div class="title">
+											                		Barcelona vs Chelsea
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="matchup" type="radio" name="matchup" value="Barcelona vs Chelsea">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Matchup -->
+
+										        <!-- Matchup -->
+										        <li class="matchup">
+										            <div class="uk-panel">
+										                <div class="box-matchup">
+										                	<div class="img-matchup">
+											                	<img src="assets/imgs/matchup/B vs M.png">
+											                </div>
+											                <div class="others-matchup">
+											                	<div class="title">
+											                		Barcelona vs Mongolia
+											                	</div>
+											                	<div class="input">
+											                		<label class="custom-radio">
+																		<input id="matchup" type="radio" name="matchup" value="Barcelona vs Mongolia">
+																		<span class="radio"></span>
+																	</label>
+											                	</div>
+											                </div>
+										                </div>
+										            </div>
+										        </li>
+										        <!-- End of Matchup -->
+										    </ul>
+
+										    <!-- Controller -->
+										    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+										    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+										    <!-- End of Controller -->
+
+										</div>
+										<!-- End of Matchup Section -->
+									  </div>
+									  <!-- End of Second Slide -->
+
+									  <!-- Starting Third Slide -->
+									  <div class="slides">
+
+									  	<div class="heading">
+											<h2 class="fs-title">Final Wager Countdown</h2>
+										</div>
+
+										<!-- Countdown Box -->
+										<div class="countdown-box">
+											<div class="title">Wager cutoff:</div>
+											<div class="countdown">
+												<table>
+													<tr>
+														<th>04</th>
+														<th>02</th>
+														<th>55</th>
+													</tr>
+													<tr>
+														<td>Days</td>
+														<td>Hours</td>
+														<td>Minutes</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<!-- End of Countdown Box -->
+
+									  </div>
+									  <!-- End of Third Slide -->
+
+									  <!-- Control Buttons' Section -->
+									  <div class="fs-buttons">
+									  	<div class="buttons">
+									  		<div class="btn">
+									  			<button id="SelectWagerAmount" onclick="moveTo(this.id)">Proceed</button>
+									  		</div>
+									  		<div class="btn">
+									  			<a href="index.html"><button type="button" class="cancel">Back</button></a>
+									  		</div>
+									  	</div>
+									  </div>
+									  <!-- End of Control Button's Section -->
+					        	</form>
+					        	<!-- End of Form -->
+					        </fieldset>
+					        <!-- End of Main/First/Select Sports Section -->
+
+
+					        <!-- Second/Select Wager Amount Section -->
+					        <fieldset id="nextToSelectWagerAmount" class="tab">
+					        	<!-- Starting Form -->
+						        <form id="selectWagerAmount" action="#">
+
+						        	<!-- Starting First Slide -->
+						          	<div class="slides">
+							          	<div class="heading">
+											<h2 class="fs-title">Select the Wager amount</h2>
+										</div>
+										<div id="wagerAmounts" class="amount-box">
+											<div id="wagerAmt" class="amount wagerAmtActive">$5</div>
+											<div id="wagerAmt" class="amount">$10</div>
+											<div id="wagerAmt" class="amount">$25</div>
+											<div id="wagerAmt" class="amount">$50</div>
+											<div id="wagerAmt" class="amount">$100</div>
+											<div id="wagerAmt" class="amount">$500</div>
+											<div id="wagerAmt" class="amount">$1000</div>
+											<div id="wagerAmt" class="amount">$2500</div>
+											<div id="wagerAmt" class="amount">$5000</div>
+										</div>
+							        </div>
+							        <!-- End of First Slide -->
+
+							        <!-- Control Button's Section -->
+									 <div class="fs-buttons">
+									  	<div class="buttons">
+									  		<div class="btn">
+									  			<button id="ChooseYourBet" onclick="moveTo(this.id)">Proceed</button>
+									  		</div>
+									  		<div class="btn">
+									  			<button id="getBackToSelectSportAndMatchup" onclick="getBackTo(this.id)" type="button" class="cancel">Back</button>
+									  		</div>
+									  	</div>
+									</div>
+									<!-- End of Control Button's Section -->
+						        </form>
+						        <!-- End of Form -->
+					        </fieldset>
+					        <!-- End of Second/Select Wager Amount Section -->
+
+
+					        <!-- Third/Choose Your Bet Section -->
+					        <fieldset id="nextToChooseYourBet" class="tab">
+					        	<!-- Starting Form -->
+						        <form id="chooseYourBet" action="#">
+
+						        	<!-- Starting First Slide -->
+						          	<div class="slides">
+
+							          	<div class="heading">
+											<h2 class="fs-title">Choose your Bet</h2>
+										</div>
+
+										<div class="que">
+											<p>What do you think Chicago Bulls will win or Mavericks?</p>
+										</div>
+
+										<!-- Bet Box Section -->
+										<div class="bet-box">
+
+											<!-- Team Box -->
+											<div class="team-box">
+												<div class="team-img">
+													<img src="assets/imgs/bet/Bulls.png">
+												</div>
+												<div class="team-others">
+													<div class="team-name">
+														Bulls
+													</div>
+													<div class="input">
+														<label class="custom-radio">
+															<input type="radio" name="bet" value="Bulls" checked="checked">
+															<span class="radio"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<!-- End of Team Box -->
+
+											<!-- Team Box -->
+											<div class="team-box">
+												<div class="team-img">
+													<img src="assets/imgs/bet/Mavericks.png">
+												</div>
+												<div class="team-others">
+													<div class="team-name">
+														Mavericks
+													</div>
+													<div class="input">
+														<label class="custom-radio">
+															<input type="radio" name="bet" value="Mavericks">
+															<span class="radio"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<!-- End of Team Box -->
+										</div>
+										<!-- End of Bet Box Section -->
+							          </div>
+							          <!-- End of First Slide -->
+
+							          <!-- Control Button's Section -->
+									  <div class="fs-buttons">
+									  	<div class="buttons">
+									  		<div class="btn">
+									  			<button id="ChooseYourPaymentMethod" onclick="moveTo(this.id)">Proceed</button>
+									  		</div>
+									  		<div class="btn">
+									  			<button id="getBackToSelectWagerAmount" onclick="getBackTo(this.id)" type="button" class="cancel">Back</button>
+									  		</div>
+									  	</div>
+									  </div>
+									  <!-- End of Control Button's Section -->
+						        </form>
+						        <!-- End of Form -->
+					        </fieldset>
+					        <!-- End of Third/Choose Your Bet Section -->
+
+					        <!-- Fourth/Choose Your Payment Method Section -->
+					        <fieldset id="nextToChooseYourPaymentMethod" class="tab">
+					        	<!-- Starting Form -->
+					          	<form id="chooseYourPaymentMethod" action="#">
+					          		<!-- Starting Slide -->
+					          		<div class="slides">
+					          			<!-- Heading -->
+						          		<div class="heading">
+											<h2 class="fs-title">Choose your Payment Method</h2>
+										</div>
+										<!-- End og Heading -->
+
+
+										<!-- Credit/Debit Card Section -->
+										<div class="cre-deb">
+											<!-- Heading of [Credit/Debit] -->
+											<div class="heading">
+												<div class="img">
+													<img src="assets/imgs/payment/VM.png">
+												</div>
+												<div class="text">
+													Credit / Debit Card
+												</div>
+												<div class="input">
+													<label class="custom-radio">
+														<input type="radio" name="payment" value="card" checked="checked">
+														<span class="radio"></span>
+													</label>
+												</div>
+											</div>
+											<!-- End of Heading [Credit/Debit] -->
+
+											<!-- Body of [Credit/Debit] -->
+											<div class="body">
+												<div class="inputs">
+													<div class="two-inputs">
+														<div class="input">
+															<label>Name on Card</label><br>
+															<input type="text" name="" placeholder="Full Name">
+														</div>
+														<div class="input">
+															<label>Credit Card Number</label><br>
+															<input type="text" name="" placeholder="**** **** **** ****">
+														</div>
+													</div>
+													<div class="two-inputs">
+														<div class="input">
+															<label>Expiry Date [MM/YY]</label><br>
+															<input type="text" name="" placeholder="MM / YY">
+														</div>
+														<div class="input">
+															<label>Security Code</label><br>
+															<input type="text" name="" placeholder="Enter VCC">
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- End of Body [Credit/Debit] -->
+										</div>
+										<!-- End of Credit/Debit Card Section -->
+
+
+										<!-- Crypto Currency Section -->
+							          	<div class="crypto-curr">
+							          		<!-- Heading of [Crypto] -->
+											<div class="heading">
+												<div class="img">
+													<img src="assets/imgs/payment/BTC-S.png">
+												</div>
+												<div class="text">
+													Crypto Currency
+												</div>
+												<div class="input">
+													<label class="custom-radio">
+														<input type="radio" name="payment" value="crypto">
+														<span class="radio"></span>
+													</label>
+												</div>
+											</div>
+											<!-- End of Heading [Crypto] -->
+
+											<!-- Body of [Crypto] -->
+											<div class="body">
+												<!-- Buttons of [Crypto] -->
+												<div class="cryptos">
+													<div class="crypto">
+														<button type="button" class="cryptoCurr active" onclick="changeCrypto(event, 'BTC')">
+															<img src="assets/imgs/payment/BTC.png">
+														</button>
+													</div>
+													<div class="crypto">
+														<button type="button" class="cryptoCurr" onclick="changeCrypto(event, 'MKR')">
+															<img src="assets/imgs/payment/M.png">
+														</button>
+													</div>
+													<div class="crypto">
+														<button type="button" class="cryptoCurr" onclick="changeCrypto(event, 'USDT')">
+															<img src="assets/imgs/payment/T.png">
+														</button>
+													</div>
+												</div>
+												<!-- End of Buttons [Crypto] -->
+
+												<!-- Conversion Section -->
+												<div class="conversion">
+													<div class="title">Conversion</div>
+													<div id="convOfBTC" class="data">
+														<button>$50 = 0.0000123 BTC</button>
+													</div>
+													<div id="convOfMKR" class="data">
+														<button>$50 = 0.01421571 MKR</button>
+													</div>
+													<div id="convOfUSDT" class="data">
+														<button>$50 = 49.967750 USDT</button>
+													</div>
+												</div>
+												<!-- End of Conversion Section -->
+
+												<!-- Internal Box Section [BTC] -->
+												<div class="internal-box">
+													<div id="BTC" class="ib">
+														<!-- Title [BTC] -->
+														<div class="title">Bitcoin Address</div>
+														<!-- End of Title [BTC] -->
+
+														<!-- BarCode/Amount [BTC] -->
+														<div class="bc-amt">
+															<div class="bc">
+																<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M28.4375 0H0V28.4375H28.4375V0ZM22.75 22.75H5.6875V5.6875H22.75V22.75Z" fill="white"/>
+																<path d="M17.0625 11.375H11.375V17.0625H17.0625V11.375Z" fill="white"/>
+																<path d="M62.5625 0V28.4375H91V0H62.5625ZM85.3125 22.75H68.25V5.6875H85.3125V22.75Z" fill="white"/>
+																<path d="M79.625 11.375H73.9375V17.0625H79.625V11.375Z" fill="white"/>
+																<path d="M0 91H28.4375V62.5625H0V91ZM5.6875 68.25H22.75V85.3125H5.6875V68.25Z" fill="white"/>
+																<path d="M17.0625 73.9375H11.375V79.625H17.0625V73.9375Z" fill="white"/>
+																<path d="M56.875 0H45.5V5.6875H56.875V0Z" fill="white"/>
+																<path d="M45.5 22.75H51.1875V17.0625H56.875V11.375H39.8125V5.6875H34.125V11.375V14.2188V17.0625H45.5V22.75Z" fill="white"/>
+																<path d="M39.8125 22.75H34.125V28.4375H39.8125V22.75Z" fill="white"/>
+																<path d="M56.875 28.4375H51.1875V34.125H34.125V39.8125H56.875V28.4375Z" fill="white"/>
+																<path d="M5.6875 51.1875H11.375V45.5H5.6875V34.125H0V56.875H5.6875V51.1875Z" fill="white"/>
+																<path d="M17.0625 34.125H11.375V39.8125H17.0625V34.125Z" fill="white"/>
+																<path d="M34.125 56.875H45.5V51.1875H39.8125V45.5H28.4375V34.125H22.75V45.5H17.0625V56.875H22.75V51.1875H25.5938H28.4375H34.125V56.875Z" fill="white"/>
+																<path d="M56.875 45.5H51.1875V56.875H56.875V45.5Z" fill="white"/>
+																<path d="M51.1875 62.5625H34.125V68.25H45.5V85.3125H34.125V91H51.1875V85.3125H62.5625V79.625H51.1875V62.5625Z" fill="white"/>
+																<path d="M39.8125 73.9375H34.125V79.625H39.8125V73.9375Z" fill="white"/>
+																<path d="M62.5625 62.5625H56.875V73.9375H62.5625V62.5625Z" fill="white"/>
+																<path d="M85.3125 73.9375H68.25V91H73.9375V79.625H85.3125V73.9375Z" fill="white"/>
+																<path d="M91 85.3125H79.625V91H91V85.3125Z" fill="white"/>
+																<path d="M91 62.5625H85.3125V68.25H91V62.5625Z" fill="white"/>
+																<path d="M68.25 68.25H73.9375V51.1875H62.5625V56.875H68.25V68.25Z" fill="white"/>
+																<path d="M79.625 39.8125H73.9375V34.125H68.25V39.8125H62.5625V45.5H85.3125V39.8125H91V34.125H79.625V39.8125Z" fill="white"/>
+																<path d="M91 51.1875H79.625V56.875H91V51.1875Z" fill="white"/>
+																</svg>
+															</div>
+
+															<div class="amt">
+																0.0000123 <span>BTC</span>
+															</div>
+
+														</div>
+														<!-- End of BarCode/Amount [BTC] -->
+
+														<div class="info">
+															Send <span>0.0000123 BTC</span> amount in one payment <br>
+															No charges are included.
+														</div>
+
+														<!-- Address Box [BTC] -->
+														<div class="addr-box">
+															<div class="addr">
+																<input id="cryptoAddressOfBTC" type="text" value="eoiweru45483545i23oiu4023948234j2o342o3i4" disabled="disabled">
+															</div>
+															<div class="copy">
+																<button id="cryptoAddrOfBTC" type="button" onclick="copyAddress(this.id)">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<rect x="11" y="10" width="12" height="13" rx="3" stroke="#ACDD49" stroke-width="2"/>
+																	<path d="M13 4.71429V4C13 2.34315 11.6569 1 10 1H4C2.34315 1 1 2.34315 1 4V11C1 12.6569 2.34315 14 4 14H6" stroke="#ACDD49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</svg>
+																</button>
+															</div>
+														</div>
+														<!-- End of Address Box [BTC] -->
+
+														<div class="ap">
+															<div class="btn">
+																<button>Awaiting Payment</button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<!-- End of Internal Box Section [BTC] -->
+
+
+												<!-- Internal Box Section [MKR] -->
+												<div class="internal-box">
+													<div id="MKR" class="ib">
+														<!-- Title [MKR] -->
+														<div class="title">Maker Address</div>
+														<!-- End of Title [MKR] -->
+
+														<!-- BarCode/Amount [MKR] -->
+														<div class="bc-amt">
+															<div class="bc">
+																<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M28.4375 0H0V28.4375H28.4375V0ZM22.75 22.75H5.6875V5.6875H22.75V22.75Z" fill="white"/>
+																<path d="M17.0625 11.375H11.375V17.0625H17.0625V11.375Z" fill="white"/>
+																<path d="M62.5625 0V28.4375H91V0H62.5625ZM85.3125 22.75H68.25V5.6875H85.3125V22.75Z" fill="white"/>
+																<path d="M79.625 11.375H73.9375V17.0625H79.625V11.375Z" fill="white"/>
+																<path d="M0 91H28.4375V62.5625H0V91ZM5.6875 68.25H22.75V85.3125H5.6875V68.25Z" fill="white"/>
+																<path d="M17.0625 73.9375H11.375V79.625H17.0625V73.9375Z" fill="white"/>
+																<path d="M56.875 0H45.5V5.6875H56.875V0Z" fill="white"/>
+																<path d="M45.5 22.75H51.1875V17.0625H56.875V11.375H39.8125V5.6875H34.125V11.375V14.2188V17.0625H45.5V22.75Z" fill="white"/>
+																<path d="M39.8125 22.75H34.125V28.4375H39.8125V22.75Z" fill="white"/>
+																<path d="M56.875 28.4375H51.1875V34.125H34.125V39.8125H56.875V28.4375Z" fill="white"/>
+																<path d="M5.6875 51.1875H11.375V45.5H5.6875V34.125H0V56.875H5.6875V51.1875Z" fill="white"/>
+																<path d="M17.0625 34.125H11.375V39.8125H17.0625V34.125Z" fill="white"/>
+																<path d="M34.125 56.875H45.5V51.1875H39.8125V45.5H28.4375V34.125H22.75V45.5H17.0625V56.875H22.75V51.1875H25.5938H28.4375H34.125V56.875Z" fill="white"/>
+																<path d="M56.875 45.5H51.1875V56.875H56.875V45.5Z" fill="white"/>
+																<path d="M51.1875 62.5625H34.125V68.25H45.5V85.3125H34.125V91H51.1875V85.3125H62.5625V79.625H51.1875V62.5625Z" fill="white"/>
+																<path d="M39.8125 73.9375H34.125V79.625H39.8125V73.9375Z" fill="white"/>
+																<path d="M62.5625 62.5625H56.875V73.9375H62.5625V62.5625Z" fill="white"/>
+																<path d="M85.3125 73.9375H68.25V91H73.9375V79.625H85.3125V73.9375Z" fill="white"/>
+																<path d="M91 85.3125H79.625V91H91V85.3125Z" fill="white"/>
+																<path d="M91 62.5625H85.3125V68.25H91V62.5625Z" fill="white"/>
+																<path d="M68.25 68.25H73.9375V51.1875H62.5625V56.875H68.25V68.25Z" fill="white"/>
+																<path d="M79.625 39.8125H73.9375V34.125H68.25V39.8125H62.5625V45.5H85.3125V39.8125H91V34.125H79.625V39.8125Z" fill="white"/>
+																<path d="M91 51.1875H79.625V56.875H91V51.1875Z" fill="white"/>
+																</svg>
+															</div>
+
+															<div class="amt">
+																0.01421571 <span>MKR</span>
+															</div>
+
+														</div>
+														<!-- End of BarCode/Amount [MKR] -->
+
+														<div class="info">
+															Send <span>0.01421571 MKR</span> amount in one payment <br>
+															No charges are included.
+														</div>
+
+														<!-- Address Box [MKR] -->
+														<div class="addr-box">
+															<div class="addr">
+																<input id="cryptoAddressOfMKR" type="text" value="axcvfeg34825687h12oiu4023948234j2o459o2i5" disabled="disabled">
+															</div>
+															<div class="copy">
+																<button id="cryptoAddrOfMKR" type="button" onclick="copyAddress(this.id)">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<rect x="11" y="10" width="12" height="13" rx="3" stroke="#ACDD49" stroke-width="2"/>
+																	<path d="M13 4.71429V4C13 2.34315 11.6569 1 10 1H4C2.34315 1 1 2.34315 1 4V11C1 12.6569 2.34315 14 4 14H6" stroke="#ACDD49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</svg>
+																</button>
+															</div>
+														</div>
+														<!-- End of Address Box [MKR] -->
+
+														<div class="ap">
+															<div class="btn">
+																<button>Awaiting Payment</button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<!-- End of Internal Box Section [MKR] -->
+
+
+
+												<!-- Internal Box Section [USDT] -->
+												<div class="internal-box">
+													<div id="USDT" class="ib">
+														<!-- Title [USDT] -->
+														<div class="title">Tether Address</div>
+														<!-- End of Title [USDT] -->
+
+														<!-- BarCode/Amount [USDT] -->
+														<div class="bc-amt">
+															<div class="bc">
+																<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M28.4375 0H0V28.4375H28.4375V0ZM22.75 22.75H5.6875V5.6875H22.75V22.75Z" fill="white"/>
+																<path d="M17.0625 11.375H11.375V17.0625H17.0625V11.375Z" fill="white"/>
+																<path d="M62.5625 0V28.4375H91V0H62.5625ZM85.3125 22.75H68.25V5.6875H85.3125V22.75Z" fill="white"/>
+																<path d="M79.625 11.375H73.9375V17.0625H79.625V11.375Z" fill="white"/>
+																<path d="M0 91H28.4375V62.5625H0V91ZM5.6875 68.25H22.75V85.3125H5.6875V68.25Z" fill="white"/>
+																<path d="M17.0625 73.9375H11.375V79.625H17.0625V73.9375Z" fill="white"/>
+																<path d="M56.875 0H45.5V5.6875H56.875V0Z" fill="white"/>
+																<path d="M45.5 22.75H51.1875V17.0625H56.875V11.375H39.8125V5.6875H34.125V11.375V14.2188V17.0625H45.5V22.75Z" fill="white"/>
+																<path d="M39.8125 22.75H34.125V28.4375H39.8125V22.75Z" fill="white"/>
+																<path d="M56.875 28.4375H51.1875V34.125H34.125V39.8125H56.875V28.4375Z" fill="white"/>
+																<path d="M5.6875 51.1875H11.375V45.5H5.6875V34.125H0V56.875H5.6875V51.1875Z" fill="white"/>
+																<path d="M17.0625 34.125H11.375V39.8125H17.0625V34.125Z" fill="white"/>
+																<path d="M34.125 56.875H45.5V51.1875H39.8125V45.5H28.4375V34.125H22.75V45.5H17.0625V56.875H22.75V51.1875H25.5938H28.4375H34.125V56.875Z" fill="white"/>
+																<path d="M56.875 45.5H51.1875V56.875H56.875V45.5Z" fill="white"/>
+																<path d="M51.1875 62.5625H34.125V68.25H45.5V85.3125H34.125V91H51.1875V85.3125H62.5625V79.625H51.1875V62.5625Z" fill="white"/>
+																<path d="M39.8125 73.9375H34.125V79.625H39.8125V73.9375Z" fill="white"/>
+																<path d="M62.5625 62.5625H56.875V73.9375H62.5625V62.5625Z" fill="white"/>
+																<path d="M85.3125 73.9375H68.25V91H73.9375V79.625H85.3125V73.9375Z" fill="white"/>
+																<path d="M91 85.3125H79.625V91H91V85.3125Z" fill="white"/>
+																<path d="M91 62.5625H85.3125V68.25H91V62.5625Z" fill="white"/>
+																<path d="M68.25 68.25H73.9375V51.1875H62.5625V56.875H68.25V68.25Z" fill="white"/>
+																<path d="M79.625 39.8125H73.9375V34.125H68.25V39.8125H62.5625V45.5H85.3125V39.8125H91V34.125H79.625V39.8125Z" fill="white"/>
+																<path d="M91 51.1875H79.625V56.875H91V51.1875Z" fill="white"/>
+																</svg>
+															</div>
+
+															<div class="amt">
+																49.967750 <span>USDT</span>
+															</div>
+
+														</div>
+														<!-- End of BarCode/Amount [USDT] -->
+
+														<div class="info">
+															Send <span>49.967750 USDT</span> amount in one payment <br>
+															No charges are included.
+														</div>
+
+														<!-- Address Box [USDT] -->
+														<div class="addr-box">
+															<div class="addr">
+																<input id="cryptoAddressOfUSDT" type="text" value="laskwdx12098543d69oiu4023948232j2o652o9i8" disabled="disabled">
+															</div>
+															<div class="copy">
+																<button id="cryptoAddrOfUSDT" type="button" onclick="copyAddress(this.id)">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<rect x="11" y="10" width="12" height="13" rx="3" stroke="#ACDD49" stroke-width="2"/>
+																	<path d="M13 4.71429V4C13 2.34315 11.6569 1 10 1H4C2.34315 1 1 2.34315 1 4V11C1 12.6569 2.34315 14 4 14H6" stroke="#ACDD49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</svg>
+																</button>
+															</div>
+														</div>
+														<!-- End of Address Box [USDT] -->
+
+														<div class="ap">
+															<div class="btn">
+																<button>Awaiting Payment</button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<!-- End of Internal Box Section [USDT] -->
+
+											</div>
+											<!-- End of Body [Crypto] -->
+										</div>
+										<!-- End of Crypto Currency Section -->
+
+
+										<!-- PayPal Section -->
+										<div class="paypal">
+											<div class="heading">
+												<div class="img">
+													<img src="assets/imgs/payment/PP.png">
+												</div>
+												<div class="text">
+													PayPal
+												</div>
+												<div class="input">
+													<label class="custom-radio">
+														<input type="radio" name="payment" value="paypal">
+														<span class="radio"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<!-- End of PayPal Section -->
+
+										<!-- Control Buttons' Section -->
+										<div class="fs-buttons">
+										  	<div class="buttons">
+										  		<div class="btn">
+										  			<button id="PayWagerAmount" onclick="moveTo(this.id)">Submit</button>
+										  		</div>
+										  		<div class="btn">
+										  			<button id="getBackToChooseYourBet" onclick="getBackTo(this.id)" type="button" class="cancel">Back</button>
+										  		</div>
+										  	</div>
+										</div>
+										<!-- End of Control Buttons' Section -->
+									</div>
+									<!-- Ending Slide -->
+					          	</form>
+					          	<!-- End of Form -->
+					        </fieldset>
+					        <!-- End of Fourth/Choose Your Payment Method Section -->
+
+
+					        <!-- Fifth/Pay Wager Amount Section -->
+					        <fieldset id="nextToPayWagerAmount" class="tab">
+					        	<!-- Starting Form -->
+						        <form id="payWagerAmount" action="">
+						        	<!-- Starting Slide -->
+						          	<div class="slides">
+							          	<div class="heading">
+											<h2 class="fs-title">Pay wager amount</h2>
+										</div>
+										<div class="pay-info">
+											<div class="title">Payment Info</div>
+											<div class="data">
+												<table>
+													<tr>
+														<td><img src="assets/imgs/payment/VISA.png"></td>
+														<td>Visa Card</td>
+														<td>**** **** **** 3456</td>
+														<td>Expiry: 09/2021</td>
+													</tr>
+												</table>
+											</div>
+											<div class="btns">
+												<div class="btn">
+													<button class="active">Edit Details</button>
+												</div>
+												<div class="btn">
+													<button>Add New Card</button>
+												</div>
+												<div class="btn">
+													<button>Remove Card</button>
+												</div>
+											</div>
+										</div>
+										<div class="data-stats">
+											<div class="stats">
+												<table>
+													<tr>
+														<td>Wager amount</td>
+														<td>$10</td>
+													</tr>
+													<tr style="border: 1px solid red;">
+														<td>Charges</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<td>Total</td>
+														<td>$10</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+							        </div>
+							        <!-- Ending Slide -->
+
+							        <!-- Control Buttons' Section -->
+									<div class="fs-buttons">
+									  	<div class="buttons">
+									  		<div class="btn">
+									  			<button>Pay Now</button>
+									  		</div>
+									  		<div class="btn">
+									  			<button id="getBackToChooseYourPaymentMethod" onclick="getBackTo(this.id)" type="button" class="cancel">Back</button>
+									  		</div>
+									  	</div>
+									</div>
+									<!-- End of Control Buttons' Section -->
+						        </form>
+						        <!-- End of Form -->
+					        </fieldset>
+					        <!-- End of Fifth/Pay Wager Amount Section -->
+					        
+					    </div>
+					</section>
+					<!-- End of Step by Step Form -->
+
+				</div>
+			</div>
+			<!-- End of Main Area -->
+
+		</div>
+	</div>
+
+</body>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/app.util.js"></script>
+	<script src="assets/js/active.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+</html>
